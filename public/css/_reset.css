@@ -1,0 +1,145 @@
+html, body, * {
+	box-sizing: border-box;
+	font-family: 'Roboto', 'Segoe UI', sans-serif;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--font-small-font: 0.9rem;
+	--font-smaller-font: 0.81rem;
+	--font-normal-font: 1rem;
+	--font-medium-font: 1.2rem;
+	--font-large-font: 1.5rem;
+
+	--primary-color: #267cde;
+	--blue: #007bff;
+	--indigo: #6610f2;
+	--purple: #6f42c1;
+	--pink: #e83e8c;
+	--red: #dc3545;
+	--orange: #fd7e14;
+	--yellow: #ffc107;
+	--green: #28a745;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--white: #fff;
+	--gray: #6c757d;
+	--gray-dark: #343a40;
+	--primary: #f35b04;
+	--secondary: #3d348b;
+	--success: #28a745;
+	--info: #17a2b8;
+	--warning: #ffc107;
+	--danger: #dc3545;
+	--light: #f8f9fa;
+	--dark: #343a40;
+	--bg-success: #2bd14e;
+	/*========== Font weight ==========*/
+	--font-medium: 500;
+	--font-bold: 600;
+
+	/*========== Margenes Bottom ==========*/
+	--mb-0-5: .5rem;
+	--mb-0-75: .75rem;
+	--mb-1: 1rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+	--mb-2-5: 2.5rem;
+	--mb-3: 3rem;
+
+	/*========== z index ==========*/
+	--z-tooltip: 10;
+	--z-fixed: 100;
+
+}
+
+input:focus {
+	border-color: var(--bg-success) !important;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+input {
+	border-top: 1px solid #d3d3d3;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #d3d3d3;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	text-indent: 15px;
+	border-radius: 8px;
+}
+
+.alert__container {
+	position: fixed;
+	padding: 20px 20px 0px 20px;
+	top: 0;
+	width: 500px;
+	right: 0;
+	/* bottom: 0; */
+	z-index: 20;
+	background-color:transparent;
+}
+
+.alert {
+	padding: 20px;
+	background-color: #f44336;
+	color: white;
+	opacity: 1;
+	transition: opacity 0.6s;
+	margin-bottom: 15px;
+}
+
+.alert.success {background-color: #04AA6D;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.closebtn:hover {
+	color: black;
+}
+
+.bg-success {
+    background-color: var(--bg-success);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-muted {
+    color: #888;
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+.invalid-input {
+    font-size: 13px;
+    color: var(--danger);
+    padding-left: 5px;
+    margin-top: 5px;
+    font-weight: 500;
+}
